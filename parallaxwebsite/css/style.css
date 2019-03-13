@@ -1,0 +1,84 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color :powderblue;
+}
+.underline{width: 200px; margin: 0 auto; height: 8px; background-color: #1e90ff;}
+.pxone, .pxtwo, .pxthree{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pxone{
+  background-image:url('https://images4.alphacoders.com/854/854553.jpg');
+  min-height:100%;
+}
+
+.pxtwo{
+  background-image:url('https://fbcoverstreet.com/content/Q7WXQ9vkhB51C7ZPQjFRjiKTNzgQ7K2ICnb4jjyFiCnTOvCjpmchCgVrwCJZbemW.jpg');
+  min-height:400px;
+}
+
+.pxthree{
+  background-image:url('https://fbcoverstreet.com/content/Q7WXQ9vkhB51C7ZPQjFRjiKTNzgQ7K2ICnb4jjyFiCnTOvCjpmchCgVrwCJZbemW.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+.team{text-align: center;}
+.team .card{border: none;}
+.team .card i{color: #1e90ff; font-size: 28px;}
+.team .card i:hover{color: #1e90ff; font-size: 25px; transition: 0.5ms;}
+
+@media(max-width:568px){
+  .pxone, .pxtwo, .pxthree{
+    background-attachment:scroll;
+  }
+}
